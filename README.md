@@ -7,7 +7,7 @@ Ce projet permet de revoir les bases tout en ajoutant des fonctionnalités moder
 
 ## Aperçu
 
-![Capture d'écran](images/screenshot.jpg)
+![Capture d'écran](images/screenshot.png)
 
 Le projet est responsive et fonctionne sur mobile et desktop.
 
