@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===========================
+     HEADER + NAVIGATION
+=========================== -->
+<header>
+    <nav>
+        <ul class="nav-container">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Bouton Dark Mode -->
+        <button id="darkModeToggle" aria-label="Changer le thème">
+            <span class="theme-icon"></span>
+        </button>
+    </nav>
+</header>
+
+<main>
+    <!-- ===========================
+         SECTION À PROPOS
+    =========================== -->
+    <section id="apropos" class="a-propos">
+        <h1>Bonjour, je suis développeur web</h1>
+        <p>Je suis actuellement en apprentissage du développement web et je souhaite améliorer mes compétences en HTML et CSS.</p>
+        <img src="images/avatar.jpg" alt="Photo du développeur">
+    </section>
+
+    <!-- ===========================
+         SECTION PROJETS
+    =========================== -->
+    <section id="projets" class="projects">
+        <h2>Mes Projets</h2>
+        <div class="projects-container">
+
+            <article class="project-card">
+                <img src="images/card1.jpg" alt="Aperçu du projet 1">
+                <h3>Projet 1</h3>
+                <p>Un premier projet pour les fondamentaux HTML et CSS.</p>
+                <a href="#">Voir le projet</a>
+            </article>
+
+            <article class="project-card">
+                <img src="images/card2.jpg" alt="Aperçu du projet 2">
+                <h3>Projet 2</h3>
+                <p>Une mise en page avec flexbox et des cartes.</p>
+                <a href="#">Voir le projet</a>
+            </article>
+
+            <article class="project-card">
+                <img src="images/card3.jpg" alt="Aperçu du projet 3">
+                <h3>Projet 3</h3>
+                <p>Un projet vitrine responsive.</p>
+                <a href="#">Voir le projet</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ===========================
+         SECTION CONTACT
+    =========================== -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form id="contactForm" novalidate>
+            <div class="form-bloc">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom">
+            </div>
+
+            <div class="form-bloc">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Entrez votre mail">
+            </div>
+
+            <div class="form-bloc">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tapez votre message"></textarea>
+            </div>
+
+            <button type="submit">Envoyer</button>
+            <div id="formMessage" aria-live="polite"></div>
+        </form>
+    </section>
+</main>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+<footer>
+    <p>© 2026 - Mon Portfolio</p>
+</footer>
+
+<!-- ===========================
+     SCRIPTS JS
+=========================== -->
+<script src="script.js"></script>
+</body>
+</html>
